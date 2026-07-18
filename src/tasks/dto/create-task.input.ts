@@ -6,11 +6,11 @@ import { TaskStatus } from '../enums/task-status.enum';
 export class CreateTaskInput {
   @Field()
   @IsString()
-  title: string;
+  title!: string;
 
   @Field()
   @IsString()
-  description: string;
+  description!: string;
 
   @Field(() => TaskStatus, { nullable: true, defaultValue: TaskStatus.BACKLOG })
   @IsOptional()
@@ -25,9 +25,9 @@ export class CreateTaskInput {
 
   @Field()
   @IsString()
-  assignedTo: string;
+  assignedTo!: string;
 
   @Field()
   @IsString()
-  projectId: string;
+  projectId!: string;
 }

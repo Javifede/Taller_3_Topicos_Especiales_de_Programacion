@@ -6,5 +6,5 @@ import { CreateTaskInput } from './create-task.input';
 export class UpdateTaskInput extends PartialType(CreateTaskInput) {
   @Field(() => ID)
   @IsUUID()
-  id: string;
+  id!: string;
 }

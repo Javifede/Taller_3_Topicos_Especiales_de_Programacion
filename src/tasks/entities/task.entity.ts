@@ -6,26 +6,26 @@ registerEnumType(TaskStatus, { name: 'TaskStatus' });
 @ObjectType()
 export class Task {
   @Field(() => ID)
-  id: string;
+  id!: string;
 
   @Field()
-  title: string;
+  title!: string;
 
   @Field()
-  description: string;
+  description!: string;
 
   @Field(() => TaskStatus)
-  status: TaskStatus;
+  status!: TaskStatus;
 
   @Field(() => [String])
-  tags: string[];
+  tags!: string[];
 
   @Field()
-  createdAt: Date;
+  createdAt!: Date;
 
   @Field()
-  assignedTo: string;
+  assignedTo!: string;
 
   @Field()
-  projectId: string;
+  projectId!: string;
 }
