@@ -19,13 +19,13 @@ export class TasksResolver {
   }
 
   @Mutation(() => Task)
-  createTask(@Args('createTaskInput') input: CreateTaskInput): Task {
-    return this.tasksService.create(input);
+  createTask(@Args('createTaskInput') createTaskInput: CreateTaskInput): Task {
+    return this.tasksService.create(createTaskInput);
   }
 
   @Mutation(() => Task)
-  updateTask(@Args('updateTaskInput') input: UpdateTaskInput): Task {
-    return this.tasksService.update(input);
+  updateTask(@Args('updateTaskInput') updateTaskInput: UpdateTaskInput): Task {
+    return this.tasksService.update(updateTaskInput);
   }
 
   @Mutation(() => Boolean)
