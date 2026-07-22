@@ -7,16 +7,16 @@ src/
 ├── main.ts                            # Punto de entrada (ya implementado)
 ├── app.module.ts                      # Módulo raíz (ya implementado)
 ├── tasks/
-│   ├── tasks.module.ts                # Módulo de tareas (ya listo)
+│   ├── tasks.module.ts                # Módulo de tareas (esqueleto)
 │   ├── tasks.resolver.ts              # GraphQL resolver (esqueleto)
 │   ├── tasks.service.ts               # Lógica de negocio (esqueleto)
 │   ├── dto/
-│   │   ├── create-task.input.ts       # DTO para crear (ya listo)
-│   │   └── update-task.input.ts       # DTO para actualizar (ya listo)
+│   │   ├── create-task.input.ts       # DTO para crear (esqueleto)
+│   │   └── update-task.input.ts       # DTO para actualizar (esqueleto)
 │   ├── entities/
-│   │   └── task.entity.ts             # Entidad Task (ya lista)
+│   │   └── task.entity.ts             # Entidad Task (esqueleto)
 │   └── enums/
-│       └── task-status.enum.ts        # Enum TaskStatus (ya listo)
+│       └── task-status.enum.ts        # Enum TaskStatus (esqueleto)
 └── common/
     ├── interceptors/
     │   ├── logging.interceptor.ts     # Interceptor de logs (esqueleto)
